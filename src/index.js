@@ -1,9 +1,9 @@
 import './styles/style.scss'
 
-let btnAllVoices = document.getElementById('all_voices')
-let btnMicrophone = document.getElementById('microphone')
-let btnStream = document.getElementById('stream')
-let mainText = document.getElementById('main_text')
+const btnAllVoices = document.getElementById('all_voices')
+const btnMicrophone = document.getElementById('microphone')
+const btnStream = document.getElementById('stream')
+const mainText = document.getElementById('main_text')
 const activeColor = "#7f34ad"
 
 btnAllVoices.addEventListener('click', function() {
