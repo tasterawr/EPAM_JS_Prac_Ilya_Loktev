@@ -17,6 +17,20 @@ h1 {
   width: 100%;
 }
 
+.record_btn {
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: none;
+  outline: none;
+  color: dimgray;
+  background-color: white;
+  transition: color 0.1s ease-in-out;
+}
+
 .nav {
   position: fixed;
   bottom: 0;
@@ -52,13 +66,26 @@ h1 {
   font-size: 34px;
 }
 
+.big_icon {
+  font-size: 120px;
+}
+
 .nav__item:hover {
   background-color: #eeeeee;
   color: #7f34ad
+}
+
+.record_btn:hover {
+  color: green;
 }
 
 .voice_message {
   font-family: 'Ubuntu', sans-serif;
   font-size: 20px;
   color: dimgray;
+}
+
+.voices_list {
+  display: table;
+  margin: 0 auto;
 }
