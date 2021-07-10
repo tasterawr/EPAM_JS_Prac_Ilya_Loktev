@@ -1,6 +1,6 @@
 import io from 'socket.io-client'
 
-let mediaRec = ""
+export let mediaRec = ""
 
 export function handleMicrophoneClick() {
     let elems = document.getElementsByClassName('recording')

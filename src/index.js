@@ -2,6 +2,9 @@ import './styles/style.scss'
 import {allVoicesActivate} from "./allVoices";
 import {activateMessage} from "./stream";
 import {handleMicrophoneClick} from "./microphone";
+import {mediaRec} from "./microphone";
+
+mediaRec = "ewew"
 
 const btnAllVoices = document.getElementById('all_voices')
 const btnMicrophone = document.getElementById('microphone')
@@ -13,6 +16,7 @@ const activeColor = "#7f34ad"
 
 btnAllVoices.addEventListener('click', function() {
     recordBtn.hidden = true
+    allVoicesList.innerHTML = ''
     mainText.innerText = 'Active: All voices mode'
     resetButtonColors()
     btnAllVoices.style.color = activeColor

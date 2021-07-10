@@ -18,4 +18,20 @@ export async function allVoicesActivate() {
         li.appendChild(audio)
         document.getElementById('allVoicesList').appendChild(li);
     }
+
+    for (let i = data.length - 5; i < data.length; i++) {
+        //attaching audio file to list object
+        const li = document.createElement('li');
+        li.classList.add('audioElement');
+        li.classList.add('voice_message');
+        li.innerHTML = data[i].timeStamp.substr(0, 24);
+        li.addEventListener('click', function(){
+            const audioBlob = new Blob([new
+            Uint8Array(data[i].audioBlob[0].data).buffer]);
+            const audioUrl = URL.createObjectURL(audioBlob);
+            const audio = new Audio(audioUrl)
+            audio.play()
+        })
+        document.getElementById('voiceList').appendChild(li);
+    }
 }
